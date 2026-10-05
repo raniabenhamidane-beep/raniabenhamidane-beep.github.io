@@ -20,10 +20,10 @@ a{color:inherit}
 h1,h2,h3{font-family:Fraunces,Georgia,serif;margin:0;line-height:1.05}
 /* hero */
 .hero{padding:56px 0 36px;display:grid;gap:32px;grid-template-columns:1fr}
-.mono{width:132px;height:164px;border:2px solid var(--line);border-radius:26px;background:var(--lilac);display:grid;place-items:center;font:800 56px Fraunces,serif;color:var(--olive);box-shadow:6px 6px 0 var(--peach)}
+.mono{width:132px;height:164px;border:2px solid var(--line);border-radius:26px;background:var(--lilac);display:grid;place-items:center;font:800 56px Fraunces,serif;color:var(--olive);box-shadow:6px 6px 0 var(--peach);margin-top:8px}
 h1{font-weight:800;font-size:clamp(34px,8.2vw,84px);color:var(--olive);letter-spacing:-.02em;text-transform:uppercase}
 h1 span{display:block}
-.pill{display:inline-block;background:var(--lilac);border:1.5px solid var(--line);border-radius:999px;padding:6px 18px;font-weight:500;font-size:clamp(15px,3.6vw,20px);margin:-14px 0 16px 12px;position:relative;transform:rotate(-2deg)}
+.pill{display:inline-block;background:var(--lilac);border:1.5px solid var(--line);border-radius:999px;padding:6px 18px;font-weight:500;font-size:clamp(15px,3.6vw,20px);margin:-14px 0 18px 0;position:relative;transform:rotate(-2deg);transform-origin:left center}
 .lead{max-width:60ch;font-size:19px;margin:0 0 22px}
 .btns{display:flex;flex-wrap:wrap;gap:10px}
 .btn{display:inline-block;padding:13px 22px;border-radius:999px;border:2px solid var(--line);font-weight:700;text-decoration:none;min-height:48px}
@@ -56,7 +56,7 @@ details{margin-top:6px}
 summary{cursor:pointer;font-weight:700;padding:12px 0;min-height:48px}
 details .proj{margin-top:10px}
 footer{padding:30px 0 60px;border-top:2px solid var(--line);font-size:15px;color:var(--mute)}
-@media (min-width:820px){.hero{grid-template-columns:auto 1fr;align-items:end;gap:48px}.cols{grid-template-columns:1.25fr 1fr}}
+@media (min-width:820px){.hero{grid-template-columns:auto 1fr;align-items:start;gap:48px}.cols{grid-template-columns:1.25fr 1fr}}
 .skills{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));margin:8px 0 56px}
 .sk{border:2px solid var(--line);border-radius:22px;padding:22px}
 .sk.h{background:var(--lilac)}.sk.q{background:var(--peach)}
@@ -66,6 +66,8 @@ footer{padding:30px 0 60px;border-top:2px solid var(--line);font-size:15px;color
 .sk li{background:var(--card);border:1.5px solid var(--line);border-radius:999px;padding:6px 14px;font-weight:500;font-size:16px}
 .langs{margin:-36px 0 52px;font-size:16px;color:var(--mute)}
 .xyz{max-width:70ch}
+.rd{display:inline-block;margin-top:10px;font-weight:700;text-decoration:underline;text-decoration-color:var(--olive);text-decoration-thickness:2px;text-underline-offset:4px}
+.rd[hidden]{display:none}
 .cols section{max-width:none}
 </style>
 </head>
@@ -75,10 +77,11 @@ footer{padding:30px 0 60px;border-top:2px solid var(--line);font-size:15px;color
   <div class="mono" aria-hidden="true">RB</div>
   <div>
     <h1><span>Rania</span><span>Ben Hamidane</span></h1>
-    <div class="pill">Sustainability & data-driven strategy</div>
+    <div class="pill">I like complex problems.</div>
     <p class="lead">Master’s student at E4S (EPFL, IMD, HEC Lausanne), combining economics, quantitative analysis, strategy and innovation to explore how sustainability can be turned into meaningful and lasting impact. I am driven by complex challenges and by the opportunity to connect different perspectives, identify where change can happen and help translate ideas into solutions with real-world impact.</p>
     <div class="btns">
-      <a class="btn main" href="mailto:rania.benhamidane@epfl.ch">rania.benhamidane@epfl.ch</a>
+      <a class="btn main" href="CV-Rania-Ben-Hamidane.pdf" download>Download my CV</a>
+      <a class="btn" href="mailto:rania.benhamidane@epfl.ch">rania.benhamidane@epfl.ch</a>
       <a class="btn" href="https://linkedin.com/in/rania-benhamidane/">LinkedIn</a>
       <a class="btn" href="https://github.com/raniabenhamidane-beep">GitHub</a>
       <a class="btn" href="tel:+41792701252">+41 79 270 12 52</a>
@@ -100,17 +103,17 @@ footer{padding:30px 0 60px;border-top:2px solid var(--line);font-size:15px;color
   <section style="padding-top:0"><h2>Academic projects</h2>
   <article class="proj"><span class="tag l">EPFL</span><span class="tag">Ecosystem governance</span><h3>SBB/CFF autonomous mobility ecosystem</h3><p class="xyz">Designed governance frameworks and stakeholder ecosystems for the iamo Level 4 automated public transport pilot, aligning regulation with on-demand transit integration.</p></article>
 <article class="proj"><span class="tag l">E4S</span><span class="tag">Corporate sustainability</span><h3>Environmental mitigation framework for Sika</h3><p class="xyz">Building a site-specific framework for manufacturing sites in water-stressed and biodiversity-sensitive areas, by translating environmental risks, operational exposure and local context into actionable mitigation recommendations.</p></article>
-<article class="proj"><span class="tag l">EPFL</span><span class="tag">Empirical research</span><h3>Did COVID-19 widen the gender employment gap in Switzerland's restaurant sector?</h3><p class="xyz">Estimated an additional decline in women's employment during the lockdown, using difference-in-differences and event-study models in Python, and confirmed robustness with robust standard errors and placebo pre-trend tests.</p></article>
+<article class="proj"><span class="tag l">EPFL</span><span class="tag">Empirical research</span><h3>Did COVID-19 widen the gender employment gap in Switzerland's restaurant sector?</h3><p class="xyz">Estimated an additional decline in women's employment during the lockdown, using difference-in-differences and event-study models in Python, and confirmed robustness with robust standard errors and placebo pre-trend tests.</p><br><a class="rd" href="report-covid-gender-gap.pdf" target="_blank" rel="noopener" hidden>Click to read the report →</a></article>
 <details><summary>See more projects</summary>
-  <article class="proj"><span class="tag l">EPFL</span><span class="tag">Life cycle assessment</span><h3>Vegetarian vs. non-vegetarian campus meals</h3><p class="xyz">Showed that targeted protein substitution can cut climate impact per nutritional unit by up to 82%, by modelling cradle-to-grave footprints (EF 3.1) for 12 campus menus.</p></article>
-<article class="proj"><span class="tag l">EPFL</span><span class="tag">Optimisation</span><h3>Drone-as-a-Service for last-mile delivery</h3><p class="xyz">Reduced projected unit costs by 21% in a hybrid bike-and-drone delivery network, through peak-hour operations and route consolidation under energy, payload and fleet constraints.</p></article>
-<article class="proj"><span class="tag l">IMD</span><span class="tag">Innovation</span><h3>Customer experience for Romande Energie</h3><p class="xyz">Designed a gamified energy-management concept to improve household engagement, combining real-time insights, personal goals, rewards, peer comparison and dynamic-tariff alignment.</p></article>
-<article class="proj"><span class="tag l">EPFL</span><span class="tag">Impact investing</span><h3>TechAir impact fund</h3><p class="xyz">Designed a simulated fund for early-stage decarbonisation deeptech, covering its investment thesis, portfolio strategy, fund economics, due diligence and LCA-based impact measurement.</p></article>
-<article class="proj"><span class="tag l">EPFL</span><span class="tag">Policy analysis</span><h3>Managing congestion at the EPFL–UNIL gym</h3><p class="xyz">Identified a welfare-optimal occupancy by calibrating a multi-objective model of satisfaction, eco-efficiency and equity, tested with Monte Carlo simulation and turned into a policy memo.</p></article>
-<article class="proj"><span class="tag l">UC Berkeley</span><span class="tag">Development economics</span><h3>Skilled emigration and Tunisia's growth</h3><p class="xyz">Estimated the link between Tunisia's brain drain and GDP growth with OLS in R, and tested robustness with ARIMA and ARDL models.</p></article>
-<article class="proj"><span class="tag l">UC Berkeley</span><span class="tag">Design thinking</span><h3>EcoGate smart bin</h3><p class="xyz">Took an AI-enabled waste-sorting concept from user pain points to prototype and scalable business model.</p></article>
-<article class="proj"><span class="tag l">UC Berkeley</span><span class="tag">Public policy</span><h3>Policy memos</h3><p class="xyz">Overdose prevention and recovery centers in West Virginia, and a targeted urban forest equity program for California.</p></article>
-<article class="proj"><span class="tag l">UNIGE</span><span class="tag">Review paper</span><h3>E-waste in Sub-Saharan Africa</h3><p class="xyz">Identified key trade-offs across Ghana, Nigeria and South Africa between informal-sector livelihoods, resource recovery, pollution and health.</p></article>
+  <article class="proj"><span class="tag l">EPFL</span><span class="tag">Life cycle assessment</span><h3>Vegetarian vs. non-vegetarian campus meals</h3><p class="xyz">Showed that targeted protein substitution can cut climate impact per nutritional unit by up to 82%, by modelling cradle-to-grave footprints (EF 3.1) for 12 campus menus.</p><br><a class="rd" href="report-campus-meals-lca.pdf" target="_blank" rel="noopener" hidden>Click to read the report →</a></article>
+<article class="proj"><span class="tag l">EPFL</span><span class="tag">Optimisation</span><h3>Drone-as-a-Service for last-mile delivery</h3><p class="xyz">Reduced projected unit costs by 21% in a hybrid bike-and-drone delivery network, through peak-hour operations and route consolidation under energy, payload and fleet constraints.</p><br><a class="rd" href="report-drone-delivery.pdf" target="_blank" rel="noopener" hidden>Click to read the report →</a></article>
+<article class="proj"><span class="tag l">IMD</span><span class="tag">Innovation</span><h3>Customer experience for Romande Energie</h3><p class="xyz">Designed a gamified energy-management concept to improve household engagement, combining real-time insights, personal goals, rewards, peer comparison and dynamic-tariff alignment.</p><br><a class="rd" href="report-romande-energie.pdf" target="_blank" rel="noopener" hidden>Click to read the report →</a></article>
+<article class="proj"><span class="tag l">EPFL</span><span class="tag">Impact investing</span><h3>TechAir impact fund</h3><p class="xyz">Designed a simulated fund for early-stage decarbonisation deeptech, covering its investment thesis, portfolio strategy, fund economics, due diligence and LCA-based impact measurement.</p><br><a class="rd" href="report-techair-fund.pdf" target="_blank" rel="noopener" hidden>Click to read the report →</a></article>
+<article class="proj"><span class="tag l">EPFL</span><span class="tag">Policy analysis</span><h3>Managing congestion at the EPFL–UNIL gym</h3><p class="xyz">Identified a welfare-optimal occupancy by calibrating a multi-objective model of satisfaction, eco-efficiency and equity, tested with Monte Carlo simulation and turned into a policy memo.</p><br><a class="rd" href="report-gym-congestion.pdf" target="_blank" rel="noopener" hidden>Click to read the report →</a></article>
+<article class="proj"><span class="tag l">UC Berkeley</span><span class="tag">Development economics</span><h3>Skilled emigration and Tunisia's growth</h3><p class="xyz">Estimated the link between Tunisia's brain drain and GDP growth with OLS in R, and tested robustness with ARIMA and ARDL models.</p><br><a class="rd" href="report-tunisia-brain-drain.pdf" target="_blank" rel="noopener" hidden>Click to read the report →</a></article>
+<article class="proj"><span class="tag l">UC Berkeley</span><span class="tag">Design thinking</span><h3>EcoGate smart bin</h3><p class="xyz">Took an AI-enabled waste-sorting concept from user pain points to prototype and scalable business model.</p><br><a class="rd" href="report-ecogate.pdf" target="_blank" rel="noopener" hidden>Click to read the report →</a></article>
+<article class="proj"><span class="tag l">UC Berkeley</span><span class="tag">Public policy</span><h3>Policy memos</h3><p class="xyz">Overdose prevention and recovery centers in West Virginia, and a targeted urban forest equity program for California.</p><br><a class="rd" href="report-policy-memos.pdf" target="_blank" rel="noopener" hidden>Click to read the report →</a></article>
+<article class="proj"><span class="tag l">UNIGE</span><span class="tag">Review paper</span><h3>E-waste in Sub-Saharan Africa</h3><p class="xyz">Identified key trade-offs across Ghana, Nigeria and South Africa between informal-sector livelihoods, resource recovery, pollution and health.</p><br><a class="rd" href="report-ewaste-africa.pdf" target="_blank" rel="noopener" hidden>Click to read the report →</a></article>
 </details></section>
 </div>
 <div>
@@ -139,5 +142,6 @@ footer{padding:30px 0 60px;border-top:2px solid var(--line);font-size:15px;color
   <p>Let's talk: <a href="mailto:rania.benhamidane@epfl.ch">rania.benhamidane@epfl.ch</a> · <a href="https://linkedin.com/in/rania-benhamidane/">LinkedIn</a> · <a href="https://github.com/raniabenhamidane-beep">GitHub</a></p>
 </footer>
 </main>
+<script>document.querySelectorAll("a.rd").forEach(function(a){fetch(a.getAttribute("href"),{method:"HEAD"}).then(function(r){if(r.ok)a.hidden=false}).catch(function(){})});</script>
 </body>
 </html>
